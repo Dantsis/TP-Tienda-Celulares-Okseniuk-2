@@ -1,0 +1,14 @@
+.quienes-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo-grande-abajo {
+  height: 280px;
+  margin-top: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.logo-grande-abajo:hover {
+  transform: scale(1.05);
+}
