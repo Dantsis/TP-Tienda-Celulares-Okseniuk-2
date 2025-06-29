@@ -15,15 +15,48 @@ const Contacto = () => {
   };
 
   return (
-    <div>
-      <h1>Contacto</h1>
+    <section className="contacto-section">
+      <h1>¿Querés hablar con nosotros?</h1>
+      <p className="subtext">
+        Dejanos tu mensaje y te respondemos lo antes posible.
+      </p>
       <form onSubmit={handleSubmit} className="form-contacto">
-        <input type="text" name="nombre" placeholder="Tu nombre" value={form.nombre} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Tu email" value={form.email} onChange={handleChange} required />
-        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" value={form.mensaje} onChange={handleChange} required />
+        <div className="input-wrapper">
+          <span className="input-icon"></span>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Tu nombre"
+            value={form.nombre}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-wrapper">
+          <span className="input-icon"></span>
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu email"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-wrapper">
+          <span className="input-icon mensaje"></span>
+          <textarea
+            name="mensaje"
+            placeholder="Tu mensaje"
+            rows="5"
+            value={form.mensaje}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <button type="submit">Enviar</button>
       </form>
-    </div>
+    </section>
   );
 };
 

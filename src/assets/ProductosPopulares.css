@@ -1,0 +1,77 @@
+.popular-container {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.popular-container h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.productos-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.producto-card {
+  background-color: #f9f9f9;
+  padding: 24px;
+  border-radius: 20px;
+  width: 180px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-card img {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.producto-card h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.producto-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.producto-card button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.comprar-btn {
+  margin-top: 10px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.comprar-btn:hover {
+  background: linear-gradient(90deg, #1a73e8, #673ab7);
+  transform: scale(1.1) rotate(1deg);
+  box-shadow: 0 8px 24px rgba(103, 58, 183, 0.5);
+  color: white;
+}
+
